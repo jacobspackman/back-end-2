@@ -12,7 +12,7 @@ const deleteHouse = id => axios.delete(`${baseURL}/${id}`).then(housesCallback).
 const updateHouse = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(housesCallback).catch(errCallback)
 
 function submitHandler(e) {
-    e.preventDefault()
+    // e.preventDefault()
 
     let address = document.querySelector('#address')
     let price = document.querySelector('#price')
