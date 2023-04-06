@@ -1,4 +1,5 @@
 const houses = require("./db.json");
+const newHouseId = 4;
 
 
 module.exports = {
@@ -6,6 +7,7 @@ module.exports = {
         res.status(200).send(houses)
     },
     createHouses: (req, res) => {
+        req.body.id = newHouseId
         houses.push(req.body)
         res.status(200).send('House successfully added.')
     },
@@ -38,4 +40,6 @@ module.exports = {
 
     }
 }
+
+
 

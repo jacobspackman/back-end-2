@@ -15,7 +15,6 @@ app.put("/api/houses/:id", updateHouses)
 app.delete("/api/houses/:id", deleteHouses)
 
 
-
 app.listen(4004, (req, res) => {
     console.log('4000 is up')
 })
